@@ -1,0 +1,95 @@
+{
+    "info": {
+      "name": "Bequest Interview Backend API",
+      "_postman_id": "d4c19cce-3b18-4f5c-a1d8-8de26f0249e6",
+      "description": "Collection for testing the Bequest Interview Backend API",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Get Data",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:3020/blockchain",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3020",
+            "path": ["blockchain"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Add Data",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n    \"data\": \"Your data here\"\n}"
+          },
+          "url": {
+            "raw": "http://localhost:3020/blockchain",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3020",
+            "path": ["blockchain"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Verify Data",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:3020/blockchain/verify",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3020",
+            "path": ["blockchain", "verify"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Restore Data",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:3020/blockchain/restore",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3020",
+            "path": ["blockchain", "restore"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Tamper Data",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:3020/blockchain/tamper",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3020",
+            "path": ["blockchain", "tamper"]
+          }
+        },
+        "response": []
+      }
+    ]
+  }
+  
